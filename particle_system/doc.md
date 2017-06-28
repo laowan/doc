@@ -1,8 +1,6 @@
 # 粒子系统使用说明 #
-***
-## 编辑器 ##
 
-![](https://github.com/laowan/doc/blob/master/particle_system/particle_editor.png)
+## 编辑器 ##
 
 ![](particle_editor.png)
 
@@ -17,13 +15,20 @@
 
 ## 系统参数 ##
 
-- Max particle：最大粒子数目
-
+- Max particle：可同时存在的最大粒子数目
 
 ## 发射器 ##
 
-- Emission Rate
-- Emit from
+粒子的初始大小、位置、颜色、速度、生存时间等参数，由发射器来决定，不同的发射器可以产生不同属性的粒子。  
+目前已经实现的发射器有以下两个：
+
+- Point
+- Circle
+
+发射器可配置的属性如下：
+
+- Emission Rate：发射速率，每秒中发射的粒子个数
+- Emit from：
 - Angle
 - Radius
 - Velocity
@@ -33,11 +38,18 @@
 
 ## 影响器（效果器） ##
 
-当一个粒子诞生时，它的大小、颜色等参数都是固定的，如果想实现在粒子的生命周期中，大小、颜色等参数可动态改变，就要用到影响器的功能了。目前已实现的影响器有以下三个：
+当一个粒子诞生时，它的大小、颜色等参数都是固定的，如果想实现在粒子的生命周期中，大小、颜色等参数可动态改变，就要用到影响器的功能了。  
+目前已实现的影响器有以下三个：
 
 - Scale
 - Color
 - Animator
+
+#### Scale ####
+
+#### Color ####
+
+#### Animator ####
 
 ## 渲染参数　##
 
