@@ -9,6 +9,8 @@
 
 Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.
 
+![](https://github.com/laowan/doc/blob/master/particle_system/particle_editor.png)
+
 Give them a try:
 
 - **Bold** (`Ctrl+B`) and *Italic* (`Ctrl+I`)
