@@ -1,34 +1,45 @@
-粒子系统使用说明
-=======
-
-## Welcome to MarkdownPad 2 ##
-
-**MarkdownPad** is a full-featured Markdown editor for Windows.
-
-### Built exclusively for Markdown ###
-
-Enjoy first-class Markdown support with easy access to  Markdown syntax and convenient keyboard shortcuts.
+# 粒子系统使用说明 #
+***
+## 编辑器 ##
 
 ![](https://github.com/laowan/doc/blob/master/particle_system/particle_editor.png)
 
-Give them a try:
+![](particle_editor.png)
 
-- **Bold** (`Ctrl+B`) and *Italic* (`Ctrl+I`)
-- Quotes (`Ctrl+Q`)
-- Code blocks (`Ctrl+K`)
-- Headings 1, 2, 3 (`Ctrl+1`, `Ctrl+2`, `Ctrl+3`)
-- Lists (`Ctrl+U` and `Ctrl+Shift+O`)
+界面主要上下两部分组成，上面列出当前粒子系统的所有可配置的参数，当点击相应参数时，下面会出现对应参数的设置控件，可以修改参数的值。
 
-### See your changes instantly with LivePreview ###
+参数可分为四类：
 
-Don't guess if your [hyperlink syntax](http://markdownpad.com) is correct; LivePreview will show you exactly what your document looks like every time you press a key.
+- Particle System，系统参数
+- Emitter，发射器参数
+- Affector，影响器（效果器）参数
+- Render，渲染参数
 
-### Make it your own ###
+## 系统参数 ##
 
-Fonts, color schemes, layouts and stylesheets are all 100% customizable so you can turn MarkdownPad into your perfect editor.
+- Max particle：最大粒子数目
 
-### A robust editor for advanced Markdown users ###
 
-MarkdownPad supports multiple Markdown processing engines, including standard Markdown, Markdown Extra (with Table support) and GitHub Flavored Markdown.
+## 发射器 ##
 
-With a tabbed document interface, PDF export, a built-in image uploader, session management, spell check, auto-save, syntax highlighting and a built-in CSS management interface, there's no limit to what you can do with MarkdownPad.
+- Emission Rate
+- Emit from
+- Angle
+- Radius
+- Velocity
+- Time to live
+- Scale
+- Start color
+
+## 影响器（效果器） ##
+
+当一个粒子诞生时，它的大小、颜色等参数都是固定的，如果想实现在粒子的生命周期中，大小、颜色等参数可动态改变，就要用到影响器的功能了。目前已实现的影响器有以下三个：
+
+- Scale
+- Color
+- Animator
+
+## 渲染参数　##
+
+- Texture
+- Blend Mode
